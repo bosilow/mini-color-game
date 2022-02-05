@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.head {
+  background-color: rgba(18, 157, 250, 0.945);
+  color: white;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stripe {
+  height: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#hardBtn {
+  margin-left: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+  height: 44.55rem;
+  background-color: rgb(31, 29, 29);
+}
+
+.square {
+  width: 15%;
+  height: 35%;
+  border-radius: 35px;
+  cursor: pointer;
+  margin: 1rem 5.5rem;
+}
+
+.btn {
+  background: none;
+  color: black;
+  border: 0;
+  padding: 0.2em 0.6em;
+  cursor: pointer;
+}
+
+h1 {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+#hide {
+  opacity: 0;
+  transition: opacity 0.45s linear;
+}
+
+@media (max-width: 1080px) {
+  .square {
+    width: 15%;
+    height: 18%;
+    margin: 0.7rem 4rem;
+    padding: 4.5rem;
+  }
+  h1 {
+    margin-left: 1rem;
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .square {
+    width: 25%;
+    height: 18%;
+    margin: 0.7rem 3rem;
+    padding: 4.5rem;
+  }
+  h1 {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .square {
+    width: 25%;
+    height: 18%;
+    margin: 0.7rem 3rem;
+    padding: 4.5rem;
+  }
+  h1 {
+    margin-left: 1.8rem;
+    font-size: 1.8rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 549px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .square {
+    width: 25%;
+    height: 18%;
+    margin: 0.7rem 1rem;
+    padding: 4.9rem;
+  }
+  h1 {
+    margin-left: 1.8rem;
+    font-size: 1.8rem;
+  }
+  .btn {
+    font-size: 0.8rem;
+    height: 1.1rem;
+  }
+  .stripe {
+    height: 1.5rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+  #hardBtn {
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .square {
+    width: 1%;
+    height: 5%;
+    margin: 0.5rem 0.5rem;
+    padding: 5.07rem;
+  }
+  h1 {
+    margin-left: 1.8rem;
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+    height: 1.1rem;
+  }
+  .stripe {
+    height: 1.5rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+  #hardBtn {
+    margin-left: 0rem;
+  }
+}
